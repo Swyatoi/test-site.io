@@ -1,0 +1,82 @@
+@media (min-width:320px) and (max-width: 1200px) {
+	.banner-right-side {
+		display: none;
+	}
+	.banner-left-side {
+		width: 100%;
+	}
+	header nav ul, 
+	header nav ul li {
+		float: none;
+	}
+	nav {
+		position: relative;
+	}
+	nav:before {
+		content: 'MENU';
+		position: relative;
+	    left: 45px;
+    	top: 3px;
+    	color: rgb(168, 149, 116);
+    	font-size: 22px;
+	}
+	header nav ul {
+		line-height: 1.2;
+		max-height: 0;
+		overflow-y: hidden;
+		transition: all 1s ease;
+		background-color: #fff;
+	}
+	nav:hover ul {
+		max-height: 800px;
+	}
+	nav .social {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	nav .social li {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	nav:after {
+		display: block;
+		height: 20px;
+	}
+	.navigation li {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.dropdown {
+		position: absolute;
+		top: 95%;
+		left: 0;
+	}
+}
+@media (min-width:320px) and (max-width: 767px) {
+	nav:before {
+		left: 10px;
+	}
+	.product-history li {
+		width: 100%;
+	}
+	.product-history {
+		flex-direction: column;
+	}
+	.product-history li:not(:last-child):after {
+		display: none;
+	}
+	.main-title {
+		font-size: 30px;
+	}
+	.main-description {
+		font-size: 18px;
+	}
+	.dropdown {
+		left: -25px;
+	}
+	.main-title {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+}
